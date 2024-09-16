@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.container {
+    
+    
+    margin-block: 50px ;
+    font-family: "permanent marker", cursive;
+    text-align: center;
+    
+    
+}
+
+.container > h1 {
+    margin-bottom: 1rem;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 225px;
+    margin: auto;
+  
+
+}
+.grid_cell {
+    width: 75px;
+    height: 75px;
+    border: 2px solid ;
+    cursor: pointer;
+    font-size: 50px;
+    line-height: 75px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.restartBtn {
+    width: 200px;
+    height: 70px;
+    margin-top: 30px;
+    background: red;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+
+.restartBtn:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+    border-radius: 20px;
+}
+
+
+.restartBtn:active {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+}
+
